@@ -516,7 +516,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <400>;
             quick-tap-ms = <200>;
-            bindings = <&to>, <&kp>;
+            bindings = <&mo>, <&kp>;
 
             hold-trigger-key-positions = <43 42 41 55 56 57 25 24 54 40>;
         };
