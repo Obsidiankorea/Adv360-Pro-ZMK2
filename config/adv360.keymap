@@ -290,6 +290,7 @@
         r_backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <24 43>;
+            timeout-ms = <0>;
         };
     };
 
