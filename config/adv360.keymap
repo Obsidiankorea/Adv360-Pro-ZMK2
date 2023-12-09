@@ -513,7 +513,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "PHT5_SEMICOLON";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "hold-preferred";
             tapping-term-ms = <400>;
             quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
