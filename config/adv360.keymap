@@ -279,18 +279,24 @@
 
         bootroader {
             bindings = <&bootloader>;
-            key-positions = <0 1>;
+            key-positions = <0 1 2>;
         };
 
         bootroader_R {
             bindings = <&bootloader>;
-            key-positions = <12 13>;
+            key-positions = <12 13 11>;
         };
 
         r_backslash {
-            bindings = <&kp BACKSLASH>;
+            bindings = <&kp NON_US_BACKSLASH>;
             key-positions = <24 43>;
             timeout-ms = <0>;
+        };
+
+        dot22 {
+            bindings = <&kp DOT>;
+            key-positions = <55 56>;
+            timeout-ms = <35>;
         };
     };
 
