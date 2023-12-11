@@ -276,7 +276,7 @@
         };
 
         r_backslash {
-            bindings = <&kp BACKSLASH>;
+            bindings = <&kp BSLH>;
             key-positions = <24 43>;
             timeout-ms = <0>;
         };
@@ -289,7 +289,7 @@
 
         l_6 {
             bindings = <&kp NUMBER_6>;
-            key-positions = <2 15>;
+            key-positions = <3 16>;
         };
 
         l_7 {
@@ -310,6 +310,11 @@
         l_0 {
             bindings = <&kp N0>;
             key-positions = <4 19>;
+        };
+
+        l_02 {
+            bindings = <&kp N0>;
+            key-positions = <17 32>;
         };
     };
 
