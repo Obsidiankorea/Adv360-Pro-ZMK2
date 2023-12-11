@@ -276,8 +276,8 @@
         };
 
         r_backslash {
-            bindings = <&kp BSLH>;
-            key-positions = <24 43>;
+            bindings = <&kp NUBS>;
+            key-positions = <10 25>;
             timeout-ms = <0>;
         };
 
