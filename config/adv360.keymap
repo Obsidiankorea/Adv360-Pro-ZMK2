@@ -250,7 +250,7 @@
 
         r_backslash {
             timeout-ms = <30>;
-            bindings = <&kp NUBS>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <10 25>;
         };
 
