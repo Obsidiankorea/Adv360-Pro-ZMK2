@@ -243,14 +243,15 @@
         };
 
         Mod.r_ctrl.alt {
+            timeout-ms = <30>;
             bindings = <&kp LA(LCTRL)>;
             key-positions = <41 43>;
         };
 
         r_backslash {
+            timeout-ms = <30>;
             bindings = <&kp NUBS>;
             key-positions = <10 25>;
-            timeout-ms = <0>;
         };
 
         comma22 {
