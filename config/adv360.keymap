@@ -104,7 +104,7 @@
             timeout-ms = <45>;
             key-positions = <41 24 25>;
             bindings = <&tog 1>;
-        }
+        };
         altf4 {
             timeout-ms = <40>;
             key-positions = <16 17 18>;
@@ -214,27 +214,22 @@
             bindings = <&kp NUMBER_6>;
             key-positions = <3 16>;
         };
-
         l_7 {
             bindings = <&kp N7>;
             key-positions = <16 17>;
         };
-
         l_8 {
             bindings = <&kp N8>;
             key-positions = <17 18>;
         };
-
         l_9 {
             bindings = <&kp N9>;
             key-positions = <18 3>;
         };
-
         l_0 {
             bindings = <&kp N0>;
             key-positions = <4 19>;
         };
-
         l_02 {
             bindings = <&kp N0>;
             key-positions = <17 32>;
