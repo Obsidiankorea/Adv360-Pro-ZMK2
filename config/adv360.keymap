@@ -122,12 +122,6 @@
             bindings = <&tog 1>;
         };
 
-        lctrlcmd {
-            timeout-ms = <30>;
-            key-positions = <29 31 32>;
-            bindings = <&kp LC(LEFT_COMMAND)>;
-        };
-
         altf4 {
             timeout-ms = <40>;
             key-positions = <16 17 18>;
@@ -138,12 +132,6 @@
             timeout-ms = <40>;
             key-positions = <16 3 18>;
             bindings = <&kp LC(LS(T))>;
-        };
-
-        rctrl {
-            timeout-ms = <30>;
-            key-positions = <44 43>;
-            bindings = <&mt LCTRL RCTRL>;
         };
 
         ralt {
@@ -174,12 +162,6 @@
             timeout-ms = <40>;
             key-positions = <48 49>;
             bindings = <&kp KP_ENTER>;
-        };
-
-        cnumberlock {
-            timeout-ms = <30>;
-            key-positions = <48 49 50>;
-            bindings = <&kp KP_NUM>;
         };
 
         c_ctrlz {
@@ -263,16 +245,6 @@
         Mod.r_ctrl.alt {
             bindings = <&kp LA(LCTRL)>;
             key-positions = <41 43>;
-        };
-
-        bootroader {
-            bindings = <&bootloader>;
-            key-positions = <0 1 2>;
-        };
-
-        bootroader_R {
-            bindings = <&bootloader>;
-            key-positions = <12 13 11>;
         };
 
         r_backslash {
