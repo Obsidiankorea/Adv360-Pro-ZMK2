@@ -28,13 +28,13 @@
 
         Rminus {
             timeout-ms = <40>;
-            key-positions = <23 40>;
+            key-positions = <54 41>;
             bindings = <&kp MINUS>;
         };
 
         Requal {
             timeout-ms = <40>;
-            key-positions = <41 54>;
+            key-positions = <40 23>;
             bindings = <&kp EQUAL>;
         };
 
