@@ -25,211 +25,254 @@
             key-positions = <18 33>;
             bindings = <&kp INSERT>;
         };
+
         Rminus {
             timeout-ms = <40>;
             key-positions = <23 40>;
             bindings = <&kp MINUS>;
         };
+
         Requal {
             timeout-ms = <40>;
             key-positions = <41 54>;
             bindings = <&kp EQUAL>;
         };
+
         lenter {
             timeout-ms = <40>;
             key-positions = <32 33>;
             bindings = <&kp N>;
         };
+
         leftn {
             timeout-ms = <40>;
             key-positions = <50 31>;
             bindings = <&kp SPACE>;
         };
+
         leftm {
             timeout-ms = <40>;
             key-positions = <50 51>;
             bindings = <&kp M>;
         };
+
         rf1 {
             timeout-ms = <40>;
             key-positions = <23 22>;
             bindings = <&kp F1>;
         };
+
         rf2 {
             timeout-ms = <40>;
             key-positions = <23 24>;
             bindings = <&kp F2>;
         };
+
         rf3 {
             timeout-ms = <40>;
             key-positions = <23 25>;
             bindings = <&kp F3>;
         };
+
         rf4 {
             timeout-ms = <40>;
             key-positions = <41 25>;
             bindings = <&kp F4>;
         };
+
         rf5 {
             timeout-ms = <40>;
             key-positions = <24 25>;
             bindings = <&kp F5>;
         };
+
         rf6 {
             timeout-ms = <40>;
             key-positions = <25 44>;
             bindings = <&kp F6>;
         };
+
         rf7 {
             timeout-ms = <40>;
             key-positions = <24 58>;
             bindings = <&kp F7>;
         };
+
         lout {
             timeout-ms = <40>;
             key-positions = <65 70>;
             bindings = <&out OUT_TOG>;
         };
+
         df_mod {
             timeout-ms = <50>;
             key-positions = <31 32>;
             bindings = <&mo 4>;
         };
+
         laltcmd {
             timeout-ms = <30>;
             key-positions = <30 31 32>;
             bindings = <&kp LA(LEFT_COMMAND)>;
         };
+
         lnumver {
             timeout-ms = <45>;
             key-positions = <41 24 25>;
             bindings = <&tog 1>;
         };
+
         altf4 {
             timeout-ms = <40>;
             key-positions = <16 17 18>;
             bindings = <&kp LA(F4)>;
         };
+
         ctrlshiftt {
             timeout-ms = <40>;
             key-positions = <16 3 18>;
             bindings = <&kp LC(LS(T))>;
         };
+
         ralt {
             timeout-ms = <30>;
             key-positions = <42 43>;
             bindings = <&kp RIGHT_ALT>;
         };
+
         ralt2 {
             timeout-ms = <50>;
             key-positions = <41 56>;
             bindings = <&kp APOSTROPHE>;
         };
+
         creturn {
             timeout-ms = <50>;
             key-positions = <55 57>;
             bindings = <&kp RETURN>;
         };
+
         c_ctrlz {
             timeout-ms = <45>;
             key-positions = <30 32>;
             bindings = <&kp LC(Z)>;
         };
+
         c_pausebreak {
             timeout-ms = <45>;
             key-positions = <54 55>;
             bindings = <&kp PAUSE_BREAK>;
         };
+
         escr {
             timeout-ms = <30>;
             key-positions = <29 32>;
             bindings = <&kp ESC>;
         };
+
         c_nj {
             timeout-ms = <60>;
             key-positions = <42 55>;
             bindings = <&macro_nj>;
         };
+
         c_home {
             timeout-ms = <30>;
             key-positions = <71 72>;
             bindings = <&kp HOME>;
         };
+
         c_end {
             timeout-ms = <50>;
             key-positions = <72 73>;
             bindings = <&kp END>;
         };
+
         c_pgup {
             timeout-ms = <50>;
             key-positions = <71 56>;
             bindings = <&kp PG_UP>;
         };
+
         c_pgdn {
             timeout-ms = <50>;
             key-positions = <73 71>;
             bindings = <&kp PG_DN>;
         };
+
         c_dot {
             timeout-ms = <50>;
             key-positions = <42 57>;
             bindings = <&kp DOT>;
         };
+
         c_dotdot {
             timeout-ms = <50>;
             key-positions = <57 56>;
             bindings = <&kp DOT>;
         };
+
         raltctrl {
             timeout-ms = <50>;
-            key-positions = <41 42 43>;
+            key-positions = <42 43>;
             bindings = <&kp LG(LA(LEFT_CONTROL))>;
         };
+
         rslash {
             timeout-ms = <30>;
             key-positions = <24 41>;
             bindings = <&kp SLASH>;
         };
+
         backspace22 {
             timeout-ms = <30>;
             key-positions = <48 50>;
             bindings = <&kp BACKSPACE>;
         };
+
         Mod.r_ctrl.alt {
             timeout-ms = <30>;
             bindings = <&kp LA(LCTRL)>;
             key-positions = <41 43>;
         };
+
         r_backslash {
             timeout-ms = <30>;
             bindings = <&kp BACKSLASH>;
-            key-positions = <10 25>;
+            key-positions = <24 43>;
         };
+
         comma22 {
             bindings = <&kp COMMA>;
             key-positions = <55 56>;
             timeout-ms = <35>;
         };
+
         l_6 {
             bindings = <&kp NUMBER_6>;
             key-positions = <3 16>;
         };
+
         l_7 {
             bindings = <&kp N7>;
             key-positions = <16 17>;
         };
+
         l_8 {
             bindings = <&kp N8>;
             key-positions = <17 18>;
         };
+
         l_9 {
             bindings = <&kp N9>;
             key-positions = <18 3>;
         };
+
         l_0 {
             bindings = <&kp N0>;
             key-positions = <4 19>;
         };
+
         l_02 {
             bindings = <&kp N0>;
             key-positions = <17 32>;
@@ -267,6 +310,7 @@
             tapping-term-ms = <400>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions =
                 <1>,
                 <2>,
