@@ -57,7 +57,7 @@
         };
 
         rf1 {
-            timeout-ms = <40>;
+            timeout-ms = <30>;
             key-positions = <23 22>;
             bindings = <&kp F1>;
         };
@@ -164,12 +164,6 @@
             bindings = <&kp PAUSE_BREAK>;
         };
 
-        escr {
-            timeout-ms = <30>;
-            key-positions = <29 32>;
-            bindings = <&kp ESC>;
-        };
-
         c_nj {
             timeout-ms = <60>;
             key-positions = <42 55>;
@@ -240,42 +234,6 @@
             timeout-ms = <30>;
             bindings = <&kp BACKSLASH>;
             key-positions = <24 43>;
-        };
-
-        comma22 {
-            bindings = <&kp COMMA>;
-            key-positions = <55 56>;
-            timeout-ms = <35>;
-        };
-
-        l_6 {
-            bindings = <&kp NUMBER_6>;
-            key-positions = <3 16>;
-        };
-
-        l_7 {
-            bindings = <&kp N7>;
-            key-positions = <16 17>;
-        };
-
-        l_8 {
-            bindings = <&kp N8>;
-            key-positions = <17 18>;
-        };
-
-        l_9 {
-            bindings = <&kp N9>;
-            key-positions = <18 3>;
-        };
-
-        l_0 {
-            bindings = <&kp N0>;
-            key-positions = <4 19>;
-        };
-
-        l_02 {
-            bindings = <&kp N0>;
-            key-positions = <17 32>;
         };
     };
 
