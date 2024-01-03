@@ -490,9 +490,9 @@
             bindings = <
 &kp F1  &kp F2     &kp F3         &kp F4  &kp F5  &kp F6  &trans                                      &kp F7           &kp F8            &kp F9            &kp F10               &kp F11                &kp F12          &kp F13
 &trans  &trans     &kp LA(F4)     &trans  &trans  &trans  &none                                       &none            &trans            &trans            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON        &trans
-&trans  &trans     &trans         &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none            &kp LEFT_BRACKET  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp QUESTION           &trans           &trans
+&trans  &trans     &trans         &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none            &kp LEFT_BRACKET  &kp LEFT_BRACKET  &kp COLON             &kp QUESTION           &trans           &trans
 &trans  &kp LC(Z)  &kp LC(LS(Z))  &trans  &trans  &trans                  &trans      &trans                           &kp LEFT_BRACE    &kp RIGHT_BRACE   &kp LS(COMMA)         &kp LS(DOT)            &kp PRINTSCREEN  &trans
-&trans  &trans     &trans         &trans  &trans          &trans  &trans  &trans      &trans  &trans  &kp PRINTSCREEN                    &kp APOSTROPHE    &kp PAGE_DOWN         &kp HOME               &kp END          &trans
+&trans  &trans     &trans         &trans  &trans          &trans  &trans  &trans      &trans  &trans  &kp PRINTSCREEN                    &kp APOSTROPHE    &kp PAGE_DOWN         &trans                 &trans           &trans
             >;
         };
 
@@ -520,7 +520,7 @@
             bindings = <
 &trans  &trans  &trans      &trans        &trans     &trans     &trans                                      &trans           &trans            &trans             &trans          &trans           &trans  &trans
 &trans  &trans  &kp LA(F4)  &trans        &trans     &trans     &trans                                      &trans           &trans            &trans             &trans          &trans           &trans  &trans
-&trans  &trans  &kp HOME    &kp UP_ARROW  &kp END    &trans     &trans  &trans  &trans      &trans  &trans  &kp PRINTSCREEN  &kp COLON         &kp UP_ARROW       &kp END         &trans           &trans  &trans
+&trans  &trans  &kp HOME    &kp UP_ARROW  &kp END    &trans     &trans  &trans  &trans      &trans  &trans  &kp PRINTSCREEN  &kp COLON         &kp UP_ARROW       &trans          &trans           &trans  &trans
 &trans  &trans  &kp LEFT    &kp DOWN      &kp RIGHT  &kp ENTER                  &trans      &trans                           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans
 &trans  &trans  &kp LEFT    &kp DOWN      &kp RIGHT             &trans  &trans  &trans      &trans  &trans  &trans                             &kp LS(COMMA)      &kp LS(DOT)     &trans           &trans  &trans
             >;
