@@ -408,7 +408,7 @@
             quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
 
-            hold-trigger-key-positions = <23 24 25 41 42 43 55 56 57 71 72 73 62 63 64 49 48 50>;
+            hold-trigger-key-positions = <23 24 25 41 42 43 55 56 57 71 72 73>;
         };
 
         pht4: positional_hold_tap4 {
@@ -478,11 +478,11 @@
 
         layer_keypad {
             bindings = <
-&kp F1  &kp F2       &kp F3     &kp F4     &kp F5           &kp F6     &trans                                                    &kp F7           &kp F8           &kp LEFT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL     &kp F13
-&trans  &kp PERCENT  &kp EQUAL  &kp MINUS  &kp KP_DIVIDE    &kp T      &none                                                     &none            &kp KP_DIVIDE    &kp NUMBER_7          &kp NUMBER_8          &kp NUMBER_9           &kp MINUS     &kp BSLH
-&trans  &kp DOLLAR   &kp DOT    &kp PLUS   &kp KP_MULTIPLY  &kp G      &none     &kp LCTRL  &kp LALT       &kp LGUI   &kp RCTRL  &kp PRINTSCREEN  &kp KP_MULTIPLY  &kp NUMBER_4          &kp NUMBER_5          &kp NUMBER_6           &kp PLUS      &kp K_MUTE
-&trans  &trans       &kp HOME   &kp UP     &kp END          &kp ENTER                       &trans         &kp PG_UP                              &trans           &kp NUMBER_1          &kp NUMBER_2          &kp NUMBER_3           &kp KP_ENTER  &kp C_VOLUME_UP
-&trans  &trans       &kp LEFT   &kp DOWN   &kp RIGHT                   &kp BSPC  &kp DEL    &kp COMMA      &trans     &kp ENTER  &kp NUMBER_0                      &kp N0                &kp NUMBER_0          &kp DOT                &kp COMMA     &kp C_VOL_DN
+&kp F1  &kp F2       &kp F3     &kp F4        &kp F5           &kp F6     &trans                                                    &kp F7           &kp F8           &kp LEFT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL     &kp F13
+&trans  &kp PERCENT  &kp EQUAL  &kp MINUS     &kp KP_DIVIDE    &kp T      &none                                                     &none            &kp KP_DIVIDE    &kp NUMBER_7          &kp NUMBER_8          &kp NUMBER_9           &kp MINUS     &kp BSLH
+&trans  &trans       &trans     &kp PLUS      &kp KP_MULTIPLY  &kp G      &none     &kp LCTRL  &kp LALT       &kp LGUI   &kp RCTRL  &kp PRINTSCREEN  &kp KP_MULTIPLY  &kp NUMBER_4          &kp NUMBER_5          &kp NUMBER_6           &kp PLUS      &kp K_MUTE
+&trans  &trans       &kp HOME   &kp UP_ARROW  &kp END          &kp ENTER                       &trans         &kp PG_UP                              &trans           &kp NUMBER_1          &kp NUMBER_2          &kp NUMBER_3           &kp KP_ENTER  &kp C_VOLUME_UP
+&trans  &trans       &kp LEFT   &kp DOWN      &kp RIGHT                   &kp BSPC  &kp DEL    &kp COMMA      &trans     &kp ENTER  &kp NUMBER_0                      &kp N0                &kp NUMBER_0          &kp DOT                &kp COMMA     &kp C_VOL_DN
             >;
         };
 
