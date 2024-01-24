@@ -88,13 +88,13 @@
 
         rf6 {
             timeout-ms = <40>;
-            key-positions = <25 44>;
+            key-positions = <43 24>;
             bindings = <&kp F6>;
         };
 
         rf7 {
             timeout-ms = <40>;
-            key-positions = <24 58>;
+            key-positions = <24 57>;
             bindings = <&kp F7>;
         };
 
@@ -161,7 +161,7 @@
         c_pausebreak {
             timeout-ms = <45>;
             key-positions = <54 55>;
-            bindings = <&kp PAUSE_BREAK>;
+            bindings = <&kp LG(LA(LCTRL))>;
         };
 
         c_nj {
