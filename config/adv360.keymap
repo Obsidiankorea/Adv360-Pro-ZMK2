@@ -58,7 +58,7 @@
 
         rf1 {
             timeout-ms = <30>;
-            key-positions = <23 22>;
+            key-positions = <23 21>;
             bindings = <&kp F1>;
         };
 
@@ -88,7 +88,7 @@
 
         rf6 {
             timeout-ms = <40>;
-            key-positions = <43 24>;
+            key-positions = <25 23>;
             bindings = <&kp F6>;
         };
 
@@ -116,12 +116,6 @@
             bindings = <&kp LA(LEFT_COMMAND)>;
         };
 
-        lnumver {
-            timeout-ms = <45>;
-            key-positions = <41 24 25>;
-            bindings = <&tog 1>;
-        };
-
         altf4 {
             timeout-ms = <40>;
             key-positions = <16 17 18>;
@@ -138,17 +132,19 @@
             timeout-ms = <30>;
             key-positions = <42 43>;
             bindings = <&kp RIGHT_ALT>;
+            layers = <0>;
         };
 
         ralt2 {
             timeout-ms = <50>;
             key-positions = <41 56>;
             bindings = <&kp APOSTROPHE>;
+            layers = <0>;
         };
 
         creturn {
             timeout-ms = <50>;
-            key-positions = <55 57>;
+            key-positions = <55 57 56>;
             bindings = <&kp RETURN>;
         };
 
@@ -214,14 +210,8 @@
 
         rslash {
             timeout-ms = <30>;
-            key-positions = <24 41>;
+            key-positions = <24 40>;
             bindings = <&kp SLASH>;
-        };
-
-        backspace22 {
-            timeout-ms = <30>;
-            key-positions = <48 50>;
-            bindings = <&kp BACKSPACE>;
         };
 
         Mod.r_ctrl.alt {
@@ -468,11 +458,11 @@
 
         default_layer {
             bindings = <
-&kp GRAVE      &kp N1              &kp Q      &kp T                       &kp N4        &kp N5  &kp F1                                                                                                                                     &kp MINUS      &kp NUMBER_6  &kp N7    &kp Y   &kp N9    &kp N0                       &kp EQUAL
-&kp TAB        &kp Q               &kp W      &kp E                       &kp R         &kp T   &kp F3                                                                                                                                     &kp F12        &kp Y         &kp U     &kp I   &kp O     &kp P                        &kp BSLH
-&mt LCTRL ESC  &kp A               &kp S      &kp D                       &kp F         &kp G   &kp F2                    &mt LS(LC(LEFT_WIN)) F4  &mt LS(LA(LCTRL)) F7         &mt LS(LA(LEFT_CONTROL)) F9  &mt LC(LS(LEFT_COMMAND)) F10  &kp F11        &kp H         &kp J     &kp K   &kp L     &pht5_semicolon 2 SEMICOLON  &kp APOSTROPHE
-&kp LSHFT      &pht RSHFT Z        &kp X      &kp C                       &kp V         &kp B                                                      &mt LS(LG(LEFT_ALT)) F6      &mt LG(LA(LSHFT)) F8                                                      &kp B         &kp N     &kp M   &kp P     &pht2 LSHFT COMMA            &mt RIGHT_SHIFT SLASH
-&td0_ls        &pht3 1 UNDERSCORE  &kp LCTRL  &mt LEFT_WIN RIGHT_CONTROL  &kp LEFT_ALT          &hm LA(LSHIFT) BACKSPACE  &mt LEFT_SHIFT DEL       &mt LA(LC(LEFT_WIN)) F5      &hklt LA(LC(LEFT_WIN)) 1     &pht4 5 ENTER                 &pht3 1 SPACE                &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT                    &kp SEMICOLON
+&kp GRAVE      &kp N1              &kp NUMBER_2  &kp NUMBER_3                &kp N4        &kp N5  &kp F1                                                                                                                                     &kp MINUS      &kp NUMBER_6  &kp NUMBER_7  &kp N8  &kp N9    &kp N0                       &kp EQUAL
+&kp TAB        &kp Q               &kp W         &kp E                       &kp R         &kp T   &kp F3                                                                                                                                     &kp F12        &kp Y         &kp U         &kp I   &kp O     &kp P                        &kp BSLH
+&mt LCTRL ESC  &kp A               &kp S         &kp D                       &kp F         &kp G   &kp F2                    &mt LS(LC(LEFT_WIN)) F4  &mt LS(LA(LCTRL)) F7         &mt LS(LA(LEFT_CONTROL)) F9  &mt LC(LS(LEFT_COMMAND)) F10  &kp F11        &kp H         &kp J         &kp K   &kp L     &pht5_semicolon 2 SEMICOLON  &kp APOSTROPHE
+&kp LSHFT      &pht RSHFT Z        &kp X         &kp C                       &kp V         &kp B                                                      &mt LS(LG(LEFT_ALT)) F6      &mt LG(LA(LSHFT)) F8                                                      &kp B         &kp N         &kp M   &kp P     &pht2 LSHFT COMMA            &mt RIGHT_SHIFT SLASH
+&td0_ls        &pht3 1 UNDERSCORE  &kp LCTRL     &mt LEFT_WIN RIGHT_CONTROL  &kp LEFT_ALT          &hm LA(LSHIFT) BACKSPACE  &mt LEFT_SHIFT DEL       &mt LA(LC(LEFT_WIN)) F5      &hklt LA(LC(LEFT_WIN)) 1     &pht4 5 ENTER                 &pht3 1 SPACE                &kp LEFT      &kp UP  &kp DOWN  &kp RIGHT                    &kp SEMICOLON
             >;
         };
 
