@@ -239,7 +239,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <71 72 73 74 64 63 62>;
+            hold-trigger-key-positions = <71 72 73 74 64 63 62 57 29 31 42 55 41>;
         };
 
         bhm: balanced_homerow_mods {
