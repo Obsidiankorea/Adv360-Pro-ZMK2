@@ -228,7 +228,7 @@
 
         scaf7_app1 {
             bindings = <&kp RS(LA(LC(F7)))>;
-            key-positions = <51 32>;
+            key-positions = <51 17>;
         };
     };
 
