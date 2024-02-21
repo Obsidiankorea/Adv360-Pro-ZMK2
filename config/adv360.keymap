@@ -225,6 +225,11 @@
             bindings = <&kp BACKSLASH>;
             key-positions = <24 43>;
         };
+
+        scaf7_app1 {
+            bindings = <&kp RS(LA(LC(F7)))>;
+            key-positions = <51 32>;
+        };
     };
 
     behaviors {
@@ -239,7 +244,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <71 72 73 74 64 63 62 57 29 31 42 55 41>;
+            hold-trigger-key-positions = <71 72 73 74 64 63 62 57 29 31 42 55 41 48 50 51 49 30 32 33 19 18 17 16 56 43 23 24 25 54 40 22 1 3 2 5 4 8 9 10 11 12 13 27>;
         };
 
         bhm: balanced_homerow_mods {
@@ -452,6 +457,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             retro-tap;
+        };
+    };
+
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>, <&macro_press>;
+
+            label = "NEW_MACRO";
         };
     };
 
