@@ -88,7 +88,7 @@
 
         rf6 {
             timeout-ms = <40>;
-            key-positions = <25 23>;
+            key-positions = <25 42>;
             bindings = <&kp F6>;
         };
 
