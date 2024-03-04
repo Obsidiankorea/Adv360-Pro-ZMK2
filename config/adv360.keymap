@@ -465,9 +465,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            retro-tap;
+            tapping-term-ms = <150>;
             hold-trigger-key-positions = <29 47 30 48 71 73 72 74 16 15 28 14 0 1 2 3 3 4 5 44 58 59 45 27 13 65 66>;
+            quick-tap-ms = <100>;
         };
     };
 
