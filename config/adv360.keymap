@@ -475,7 +475,7 @@
         date_now: date_now {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(SEMICOLON))))>;
+            bindings = <&kp LS(LA(LG(SEMICOLON)))>;
             label = "DATE_NOW";
         };
     };
