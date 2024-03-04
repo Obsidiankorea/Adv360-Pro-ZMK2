@@ -275,7 +275,7 @@
 
         n0 {
             bindings = <&kp N0>;
-            key-positions = <16 18>;
+            key-positions = <17 32>;
         };
     };
 
