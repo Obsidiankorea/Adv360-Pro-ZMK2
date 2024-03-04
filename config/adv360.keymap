@@ -66,41 +66,48 @@
             timeout-ms = <40>;
             key-positions = <23 24>;
             bindings = <&kp F2>;
+            require-prior-idle-ms = <1>;
+            layers = <0>;
         };
 
         rf3 {
             timeout-ms = <40>;
             key-positions = <23 25>;
             bindings = <&kp F3>;
+            layers = <0>;
         };
 
         rf4 {
             timeout-ms = <40>;
             key-positions = <41 25>;
             bindings = <&kp F4>;
+            layers = <0>;
         };
 
         rf5 {
             timeout-ms = <40>;
             key-positions = <24 25>;
             bindings = <&kp F5>;
+            layers = <0>;
         };
 
         rf6 {
             timeout-ms = <40>;
             key-positions = <25 42>;
             bindings = <&kp F6>;
+            layers = <0>;
         };
 
         rf7 {
             timeout-ms = <40>;
             key-positions = <24 57>;
             bindings = <&kp F7>;
+            layers = <0>;
         };
 
         lout {
             timeout-ms = <40>;
-            key-positions = <65 70>;
+            key-positions = <66 69>;
             bindings = <&out OUT_TOG>;
         };
 
@@ -580,6 +587,16 @@
 &trans  &trans  &kp HOME    &kp UP_ARROW  &kp END    &trans     &trans  &trans  &trans      &trans  &trans  &kp PRINTSCREEN  &kp COLON         &kp UP_ARROW       &trans          &trans           &trans  &trans
 &trans  &trans  &kp LEFT    &kp DOWN      &kp RIGHT  &kp ENTER                  &trans      &trans                           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans
 &trans  &trans  &kp LEFT    &kp DOWN      &kp RIGHT             &trans  &trans  &trans      &trans  &trans  &trans                             &kp LS(COMMA)      &kp LS(DOT)     &trans           &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
