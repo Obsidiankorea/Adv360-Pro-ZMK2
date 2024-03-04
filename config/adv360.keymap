@@ -434,7 +434,7 @@
             label = "TAP_DANCE_ls_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 3>, <&kp PRINTSCREEN>;
+            bindings = <&mo 3>, <&kp PRINTSCREEN>, <&date_now>;
         };
 
         pht5_semicolon: pht5_semicolon {
@@ -472,12 +472,11 @@
     };
 
     macros {
-        new_macro: new_macro {
+        date_now: date_now {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>, <&macro_press>;
-
-            label = "NEW_MACRO";
+            bindings = <&kp LS(LA(LC(LG(SEMICOLON))))>;
+            label = "DATE_NOW";
         };
     };
 
