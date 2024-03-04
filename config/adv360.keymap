@@ -58,7 +58,7 @@
 
         rf1 {
             timeout-ms = <30>;
-            key-positions = <23 21>;
+            key-positions = <22 23>;
             bindings = <&kp F1>;
         };
 
@@ -226,9 +226,49 @@
             key-positions = <24 43>;
         };
 
-        scaf7_app1 {
-            bindings = <&kp RS(LA(LC(F7)))>;
-            key-positions = <51 17>;
+        caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <46 59>;
+        };
+
+        f8 {
+            bindings = <&kp F8>;
+            key-positions = <42 73>;
+        };
+
+        lay1 {
+            bindings = <&to 1>;
+            key-positions = <24 25 41>;
+        };
+
+        numberlock {
+            bindings = <&kp KP_NLCK>;
+            key-positions = <3 10>;
+        };
+
+        six {
+            bindings = <&kp NUMBER_6>;
+            key-positions = <2 15>;
+        };
+
+        n7 {
+            bindings = <&kp N7>;
+            key-positions = <16 3>;
+        };
+
+        n8 {
+            bindings = <&kp N8>;
+            key-positions = <3 18>;
+        };
+
+        n9 {
+            bindings = <&kp N9>;
+            key-positions = <4 19>;
+        };
+
+        n0 {
+            bindings = <&kp N0>;
+            key-positions = <16 18>;
         };
     };
 
@@ -486,7 +526,7 @@
         default_layer {
             bindings = <
 &kp GRAVE           &kp N1              &kp NUMBER_2  &kp NUMBER_3                &kp N4        &kp N5  &kp F1                                                                                                                                     &kp MINUS      &kp NUMBER_6  &kp NUMBER_7  &kp N8  &kp N9    &kp N0                       &kp EQUAL
-&kp TAB             &kp Q               &kp W         &kp E                       &kp R         &kp T   &kp F3                                                                                                                                     &kp F12        &kp Y         &kp U         &kp I   &kp O     &kp P                        &kp BSLH
+&lt 1 TAB           &kp Q               &kp W         &kp E                       &kp R         &kp T   &kp F3                                                                                                                                     &kp F12        &kp Y         &kp U         &kp I   &kp O     &kp P                        &kp BSLH
 &mt LCTRL ESC       &kp A               &kp S         &kp D                       &kp F         &kp G   &kp F2                    &mt LS(LC(LEFT_WIN)) F4  &mt LS(LA(LCTRL)) F7         &mt LS(LA(LEFT_CONTROL)) F9  &mt LC(LS(LEFT_COMMAND)) F10  &kp F11        &kp H         &kp J         &kp K   &kp L     &pht5_semicolon 2 SEMICOLON  &kp APOSTROPHE
 &ls_pht5 LSHIFT N0  &pht RSHFT Z        &kp X         &kp C                       &kp V         &kp B                                                      &mt LS(LG(LEFT_ALT)) F6      &mt LG(LA(LSHFT)) F8                                                      &kp B         &kp N         &kp M   &kp P     &pht2 LSHFT COMMA            &mt RIGHT_SHIFT SLASH
 &td0_ls             &pht3 1 UNDERSCORE  &kp LCTRL     &mt LEFT_WIN RIGHT_CONTROL  &kp LEFT_ALT          &hm LA(LSHIFT) BACKSPACE  &mt LEFT_SHIFT DEL       &mt LA(LC(LEFT_WIN)) F5      &hklt LA(LC(LEFT_WIN)) 1     &pht4 5 ENTER                 &pht3 1 SPACE                &kp LEFT      &kp UP  &kp DOWN  &kp RIGHT                    &kp SEMICOLON
