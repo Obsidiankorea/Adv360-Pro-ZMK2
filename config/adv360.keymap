@@ -243,11 +243,6 @@
             key-positions = <3 10>;
         };
 
-        left_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <18 16>;
-        };
-
         f12 {
             bindings = <&kp F12>;
             key-positions = <13 12>;
@@ -522,7 +517,7 @@
             bindings = <
 &kp GRAVE           &kp NUMBER_1   &kp NUMBER_2     &x_3                &kp N4            &kp N5    &kp F1                                                                                                                                          &kp MINUS      &kp NUMBER_6  &kp SEMI  &kp PG_UP  &kp PAGE_DOWN  &kp PG_DN              &kp EQUAL
 &kp TAB             &kp N3         &kp W            &kp E               &kp R             &mkp MB1  &mkp MB2                                                                                                                                        &kp F12        &kp Y         &kp U     &kp I      &kp O          &kp SLASH              &kp NON_US_BACKSLASH
-&mt CAPSLOCK ESC    &kp A          &kp S            &kp D               &kp F             &kp G     &kp GLOBE                      &mt LS(LC(LEFT_WIN)) F4  &mt LS(LA(LCTRL)) F7         &mt LS(LA(LEFT_CONTROL)) F9  &mt LC(LS(LEFT_COMMAND)) F10  &kp F11        &kp H         &kp J     &kp K      &kp L          &pht5_semicolon 2 DOT  &tog 1
+&mt LCTRL ESC       &kp A          &kp S            &kp D               &kp F             &kp G     &kp GLOBE                      &mt LS(LC(LEFT_WIN)) F4  &mt LS(LA(LCTRL)) F7         &mt LS(LA(LEFT_CONTROL)) F9  &mt LC(LS(LEFT_COMMAND)) F10  &kp F11        &kp H         &kp J     &kp K      &kp L          &pht5_semicolon 2 DOT  &tog 1
 &mt LEFT_SHIFT DOT  &pht RSHFT Z   &kp Q            &kp C               &kp T             &kp V                                                             &mt LS(LG(LEFT_ALT)) F6      &mt LG(LA(LSHFT)) F8                                                      &kp B         &nj       &kp M      &kp P          &pht2 LSHFT COMMA      &mt RIGHT_SHIFT COMMA
 &td0_ls             &pht3 6 LCTRL  &mt LCTRL COMMA  &mt LEFT_WIN RCTRL  &mt LEFT_ALT DOT            &hm LA(RIGHT_SHIFT) BACKSPACE  &mt LEFT_ALT DEL         &mt LA(LC(LEFT_WIN)) F5      &hklt LA(LC(LEFT_WIN)) 1     &pht4 6 ENTER                 &pht3 1 SPACE                &kp LEFT  &kp UP     &kp DOWN       &kp RIGHT              &kp SEMI
             >;
