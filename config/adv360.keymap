@@ -452,7 +452,7 @@
         left_backlit: left_backlit {
             compatible = "zmk,behavior-mod-morph";
             label = "LEFT_BACKLIT";
-            bindings = <&kp GRAVE>, <&kp N0>;
+            bindings = <&kp GRAVE>, <&kp LG(N0)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
