@@ -295,15 +295,14 @@
             key-positions = <50 49>;
         };
 
-        right_space {
-            bindings = <&kp SPACE>;
-            key-positions = <54 55>;
-            layers = <1>;
-        };
-
         rightclick {
             bindings = <&mkp MB2>;
             key-positions = <19 18>;
+        };
+
+        alt_right_left {
+            bindings = <&kp LC(LEFT_ALT)>;
+            key-positions = <54 56>;
         };
     };
 
@@ -555,11 +554,11 @@
 
         layer_mod {
             bindings = <
-&none         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
-&none         &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
-&none         &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &bootloader
-&out OUT_TOG  &mo 1         &none         &none         &none         &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
-&out OUT_BLE  &bl1          &bt2          &bt3          &bt4                        &bt5         &bt5   &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&none         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none            &none
+&none         &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none            &none
+&none         &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none            &bootloader
+&out OUT_TOG  &mo 1         &none         &none         &none         &none                             &none      &none                                           &none  &none       &none       &none  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC
+&out OUT_BLE  &bl1          &bt2          &bt3          &bt4                        &bt5         &bt5   &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &kp C_VOL_DN     &kp C_BRIGHTNESS_DEC
             >;
         };
 
