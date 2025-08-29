@@ -276,6 +276,7 @@
         ctrl_v {
             bindings = <&kp LC(V)>;
             key-positions = <50 31>;
+            layers = <0>;
         };
 
         ddddddd {
@@ -288,16 +289,6 @@
         ctrl_x {
             bindings = <&kp LC(X)>;
             key-positions = <3 18>;
-        };
-
-        left_numberlock {
-            bindings = <&kp KP_NUMLOCK>;
-            key-positions = <50 49>;
-        };
-
-        rightclick {
-            bindings = <&mkp MB2>;
-            key-positions = <19 18>;
         };
 
         alt_right_left {
@@ -321,6 +312,33 @@
             bindings = <&to 9>;
             key-positions = <5 20>;
             layers = <0>;
+        };
+
+        cmd_v {
+            bindings = <&kp LG(V)>;
+            key-positions = <50 31>;
+            layers = <9>;
+        };
+
+        cmd_c {
+            bindings = <&kp LG(C)>;
+            key-positions = <32 17>;
+            timeout-ms = <45>;
+            layers = <0>;
+        };
+
+        cmdshiftt {
+            bindings = <&kp LS(LG(T))>;
+            key-positions = <16 3 18>;
+            timeout-ms = <40>;
+            layers = <9>;
+        };
+
+        mac_cmd_z {
+            bindings = <&mt LG(LEFT_ALT) LG(Z)>;
+            key-positions = <30 32>;
+            timeout-ms = <45>;
+            layers = <9>;
         };
     };
 
