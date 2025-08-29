@@ -310,7 +310,7 @@
         };
 
         to_Mac {
-            bindings = <&to 9>;
+            bindings = <&bl1>;
             key-positions = <5 20>;
             layers = <0>;
         };
@@ -516,7 +516,7 @@
         bl1: bl1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_BLE &to 9 &bt BT_SEL 0>;
+            bindings = <&out OUT_TOG &tog 9 &bt BT_SEL 0>;
             label = "BL1";
         };
 
