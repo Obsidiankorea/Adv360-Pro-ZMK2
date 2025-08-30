@@ -295,11 +295,6 @@
             key-positions = <50 49>;
         };
 
-        rightclick {
-            bindings = <&mkp MB2>;
-            key-positions = <19 18>;
-        };
-
         alt_right_left {
             bindings = <&kp LC(LEFT_ALT)>;
             key-positions = <54 56>;
@@ -309,18 +304,6 @@
             bindings = <&kp F18>;
             key-positions = <43 42>;
             layers = <9>;
-        };
-
-        to_windows {
-            bindings = <&to 0>;
-            key-positions = <5 20>;
-            layers = <9>;
-        };
-
-        to_Mac {
-            bindings = <&to 9>;
-            key-positions = <5 20>;
-            layers = <0>;
         };
     };
 
