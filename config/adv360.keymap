@@ -44,12 +44,14 @@
             timeout-ms = <40>;
             key-positions = <32 33>;
             bindings = <&kp N>;
+            layers = <0>;
         };
 
         leftm {
             timeout-ms = <40>;
             key-positions = <50 51>;
             bindings = <&kp M>;
+            layers = <0>;
         };
 
         rf2 {
@@ -126,7 +128,7 @@
         rf18mac {
             timeout-ms = <40>;
             key-positions = <42 43>;
-            bindings = <&kp F18>;
+            bindings = <&kp LC(SPACE)>;
             layers = <9>;
         };
 
