@@ -102,7 +102,7 @@
         df_mod {
             timeout-ms = <50>;
             key-positions = <31 32>;
-            bindings = <&underbar_dd 4 UNDERSCORE>;
+            bindings = <&underbar_dd 5 UNDERSCORE>;
         };
 
         laltcmd {
@@ -303,7 +303,7 @@
         mac_rightf18 {
             bindings = <&kp F18>;
             key-positions = <43 42>;
-            layers = <9>;
+            layers = <3>;
         };
     };
 
@@ -394,7 +394,7 @@
             label = "TAP_DANCE_ls_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 3>, <&kp PAUSE_BREAK>, <&date_now>;
+            bindings = <&mo 4>, <&kp PAUSE_BREAK>, <&date_now>;
         };
 
         pht5_semicolon: pht5_semicolon {
@@ -511,13 +511,6 @@
             bindings = <&out OUT_BLE &bt BT_SEL 4>;
             label = "NEW_MACRO";
         };
-
-        hwp_start: hwp_start {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp I &kp M &kp P &kp O &kp R &kp T &kp SPACE &kp W &kp I &kp N &kp N3 &kp N2 &kp C &kp O &kp M &kp DOT &kp C &kp L &kp I &kp E &kp N &kp T &kp SPACE &kp A &kp S &kp SPACE &kp W &kp I &kp N &kp N3 &kp N2 &kp RET &kp H &kp W &kp P &kp SPACE &kp EQUAL &kp SPACE &kp W &kp I &kp N &kp N3 &kp N2 &kp DOT &kp G &kp E &kp N &kp C &kp A &kp C &kp H &kp E &kp DOT &kp LS(E) &kp N &kp S &kp U &kp R &kp E &kp LS(D) &kp I &kp S &kp P &kp A &kp T &kp C &kp H &kp LPAR &kp DQT &kp H &kp W &kp P &kp F &kp R &kp A &kp M &kp E &kp DOT &kp H &kp W &kp P &kp O &kp B &kp J &kp E &kp C &kp T &kp DQT &kp RPAR &kp RET &kp H &kp W &kp P &kp DOT &kp LS(X) &kp LS(H) &kp W &kp P &kp LS(W) &kp I &kp N &kp D &kp O &kp W &kp S &kp DOT &kp LS(I) &kp T &kp E &kp M &kp LPAR &kp N0 &kp RPAR &kp DOT &kp LS(V) &kp I &kp S &kp I &kp B &kp L &kp E &kp SPACE &kp EQUAL &kp SPACE &kp LS(T) &kp R &kp U &kp E &kp RET &kp H &kp W &kp P &kp DOT &kp LS(R) &kp E &kp G &kp I &kp S &kp T &kp E &kp R &kp LS(M) &kp O &kp D &kp U &kp L &kp E &kp LPAR &kp DQT &kp LS(F) &kp I &kp L &kp E &kp LS(P) &kp A &kp T &kp H &kp LS(C) &kp H &kp E &kp C &kp K &kp LS(D) &kp LS(L) &kp LS(L) &kp DQT &kp COMMA &kp DQT &kp LS(F) &kp I &kp L &kp E &kp LS(P) &kp A &kp T &kp H &kp LS(C) &kp H &kp E &kp C &kp K &kp E &kp R &kp LS(M) &kp O &kp D &kp U &kp L &kp E &kp DQT &kp RPAR>;
-            label = "HWP_START";
-        };
     };
 
     keymap {
@@ -529,7 +522,7 @@
 &kp TAB           &kp N3         &kp W         &kp E               &kp R         &mkp LCLK  &mkp RCLK                                                                                                                                       &kp F12        &kp PG_UP     &kp U     &kp I         &kp O          &kp SLASH              &kp NON_US_BACKSLASH
 &mt CAPSLOCK ESC  &kp A          &kp S         &kp D               &kp F         &kp G      &kp GLOBE                      &mt LS(LC(LEFT_WIN)) F4  &mt LS(LA(LCTRL)) F7         &mt LS(LA(LEFT_CONTROL)) F9  &mt LC(LS(LEFT_COMMAND)) F10  &kp F11        &kp H         &kp J     &kp K         &kp L          &pht5_semicolon 2 DOT  &tog 1
 &kp RIGHT_SHIFT   &pht RSHFT Z   &kp Q         &kp C               &kp T         &kp V                                                              &mt LS(LG(LEFT_ALT)) F6      &mt LG(LA(LSHFT)) F8                                                      &kp B         &nj       &kp M         &kp P          &pht2 LSHFT COMMA      &mt RIGHT_SHIFT DOT
-&td0_ls           &pht3 6 LCTRL  &kp LCTRL     &mt LEFT_WIN RCTRL  &kp LEFT_ALT             &hm LA(RIGHT_SHIFT) BACKSPACE  &mt LEFT_ALT DEL         &mt LA(LC(LEFT_WIN)) F5      &hklt LA(LC(LEFT_WIN)) 1     &pht4 6 ENTER                 &pht3 1 SPACE                &kp LEFT  &kp UP_ARROW  &kp DOWN       &kp RIGHT              &kp SEMI
+&td0_ls           &pht3 7 LCTRL  &kp LCTRL     &mt LEFT_WIN RCTRL  &kp LEFT_ALT             &hm LA(RIGHT_SHIFT) BACKSPACE  &mt LEFT_ALT DEL         &mt LA(LC(LEFT_WIN)) F5      &hklt LA(LC(LEFT_WIN)) 1     &pht4 7 ENTER                 &pht3 1 SPACE                &kp LEFT  &kp UP_ARROW  &kp DOWN       &kp RIGHT              &kp SEMI
             >;
         };
 
@@ -537,7 +530,7 @@
             bindings = <
 &kp F1  &kp F2          &kp F3        &kp F4        &kp F5        &kp F6  &trans                                                    &kp F7           &kp F8           &kp TAB           &kp SLASH     &kp ASTERISK       &kp EQUAL               &kp F13
 &trans  &trans          &kp NUMBER_6  &kp N7        &kp N9        &trans  &none                                                     &none            &kp KP_DIVIDE    &kp NUMBER_7      &kp NUMBER_8  &kp NUMBER_9       &kp MINUS               &trans
-&trans  &tog 0          &kp NUMBER_4  &to 0         &kp NUMBER_6  &trans  &none     &kp LCTRL  &kp LALT       &kp LGUI   &kp RCTRL  &kp PRINTSCREEN  &kp KP_MULTIPLY  &kp NUMBER_4      &kp NUMBER_5  &kp NUMBER_6       &pht5_semicolon 8 PLUS  &kp K_MUTE
+&trans  &tog 0          &kp NUMBER_4  &to 0         &kp NUMBER_6  &trans  &none     &kp LCTRL  &kp LALT       &kp LGUI   &kp RCTRL  &kp PRINTSCREEN  &kp KP_MULTIPLY  &kp NUMBER_4      &kp NUMBER_5  &kp NUMBER_6       &pht5_semicolon 9 PLUS  &kp K_MUTE
 &trans  &kp LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans                       &trans         &kp PG_UP                              &trans           &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3       &pht2 LEFT_SHIFT ENTER  &kp C_VOLUME_UP
 &trans  &trans          &kp LEFT      &kp DOWN      &kp N0                &kp BSPC  &kp DEL    &kp COMMA      &trans     &kp ENTER  &kp NUMBER_0                      &kp LEFT_BRACKET  &kp NUMBER_0  &kp RIGHT_BRACKET  &kp COMMA               &kp C_VOL_DN
             >;
@@ -550,6 +543,16 @@
 &trans  &trans     &trans         &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none            &kp DOUBLE_QUOTES  &kp SQT           &kp COLON             &kp QUESTION           &trans           &trans
 &trans  &kp LC(Z)  &kp LC(LS(Z))  &trans  &trans  &trans                  &trans      &trans                           &kp LEFT_BRACE     &kp PERCENT       &kp HASH              &kp AT_SIGN            &kp PRINTSCREEN  &trans
 &trans  &trans     &trans         &trans  &trans          &trans  &trans  &trans      &trans  &trans  &kp EXCLAMATION                     &kp K_CALCULATOR  &kp CARET             &trans                 &trans           &trans
+            >;
+        };
+
+        Mac {
+            bindings = <
+&left_backlit         &kp NUMBER_1   &kp NUMBER_2  &x_3                &kp N4        &kp N5    &kp F1                                                                                                                                          &kp MINUS      &kp NUMBER_6  &kp SEMI  &kp Y         &kp PAGE_DOWN  &kp PG_DN              &kp EQUAL
+&kp TAB               &kp N3         &kp W         &kp E               &kp R         &mkp MB1  &mkp MB2                                                                                                                                        &kp F12        &kp PG_UP     &kp U     &kp I         &kp O          &kp SLASH              &kp NON_US_BACKSLASH
+&mt LEFT_COMMAND ESC  &kp A          &kp S         &kp D               &kp F         &kp G     &kp GLOBE                      &mt LS(LC(LEFT_WIN)) F4  &mt LS(LA(LCTRL)) F7         &mt LS(LA(LEFT_CONTROL)) F9  &mt LC(LS(LEFT_COMMAND)) F10  &kp F11        &kp H         &kp J     &kp K         &kp L          &pht5_semicolon 2 DOT  &tog 1
+&kp RIGHT_SHIFT       &pht RSHFT Z   &kp Q         &kp C               &kp T         &kp V                                                             &mt LS(LG(LEFT_ALT)) F6      &mt LG(LA(LSHFT)) F8                                                      &kp B         &nj       &kp M         &kp P          &pht2 LSHFT COMMA      &mt RIGHT_SHIFT DOT
+&td0_ls               &pht3 7 LCTRL  &kp LCTRL     &mt LEFT_WIN RCTRL  &kp LEFT_ALT            &hm LA(RIGHT_SHIFT) BACKSPACE  &mt LEFT_ALT DEL         &mt LA(LC(LEFT_WIN)) F5      &hklt LA(LC(LEFT_WIN)) 1     &pht4 7 ENTER                 &pht3 1 SPACE                &kp LEFT  &kp UP_ARROW  &kp DOWN       &kp RIGHT              &kp SEMI
             >;
         };
 
@@ -612,24 +615,7 @@
 &trans  &trans  &trans        &kp N0        &trans          &trans  &trans  &trans      &trans  &trans  &trans              &trans     &trans        &trans         &trans  &trans
             >;
         };
-
-        Mac {
-            bindings = <
-&left_backlit         &kp NUMBER_1   &kp NUMBER_2  &x_3                &kp N4        &kp N5    &kp F1                                                                                                                                          &kp MINUS      &kp NUMBER_6  &kp SEMI  &kp Y         &kp PAGE_DOWN  &kp PG_DN              &kp EQUAL
-&kp TAB               &kp N3         &kp W         &kp E               &kp R         &mkp MB1  &mkp MB2                                                                                                                                        &kp F12        &kp PG_UP     &kp U     &kp I         &kp O          &kp SLASH              &kp NON_US_BACKSLASH
-&mt LEFT_COMMAND ESC  &kp A          &kp S         &kp D               &kp F         &kp G     &kp GLOBE                      &mt LS(LC(LEFT_WIN)) F4  &mt LS(LA(LCTRL)) F7         &mt LS(LA(LEFT_CONTROL)) F9  &mt LC(LS(LEFT_COMMAND)) F10  &kp F11        &kp H         &kp J     &kp K         &kp L          &pht5_semicolon 2 DOT  &tog 1
-&kp RIGHT_SHIFT       &pht RSHFT Z   &kp Q         &kp C               &kp T         &kp V                                                             &mt LS(LG(LEFT_ALT)) F6      &mt LG(LA(LSHFT)) F8                                                      &kp B         &nj       &kp M         &kp P          &pht2 LSHFT COMMA      &mt RIGHT_SHIFT DOT
-&td0_ls               &pht3 6 LCTRL  &kp LCTRL     &mt LEFT_WIN RCTRL  &kp LEFT_ALT            &hm LA(RIGHT_SHIFT) BACKSPACE  &mt LEFT_ALT DEL         &mt LA(LC(LEFT_WIN)) F5      &hklt LA(LC(LEFT_WIN)) 1     &pht4 6 ENTER                 &pht3 1 SPACE                &kp LEFT  &kp UP_ARROW  &kp DOWN       &kp RIGHT              &kp SEMI
-            >;
-        };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        python_hwp_macro {
-            if-layers = <1 3>;
-            then-layer = <7>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
