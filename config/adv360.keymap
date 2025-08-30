@@ -126,7 +126,7 @@
         ralt {
             timeout-ms = <30>;
             key-positions = <42 43>;
-            bindings = <&kp RIGHT_ALT>;
+            bindings = <&kp F18>;
         };
 
         ralt2 {
