@@ -123,10 +123,11 @@
             bindings = <&kp LC(LS(T))>;
         };
 
-        ralt {
-            timeout-ms = <30>;
+        rf18mac {
+            timeout-ms = <40>;
             key-positions = <42 43>;
             bindings = <&kp F18>;
+            layers = <9>;
         };
 
         ralt2 {
@@ -212,7 +213,6 @@
             key-positions = <24 41>;
             bindings = <&kp SLASH>;
             require-prior-idle-ms = <0>;
-            layers = <0>;
         };
 
         Mod.r_ctrl.alt {
@@ -332,6 +332,13 @@
             key-positions = <30 32>;
             timeout-ms = <45>;
             layers = <9>;
+        };
+
+        rhangul {
+            bindings = <&kp RALT>;
+            key-positions = <43 42>;
+            layers = <0>;
+            timeout-ms = <40>;
         };
     };
 
