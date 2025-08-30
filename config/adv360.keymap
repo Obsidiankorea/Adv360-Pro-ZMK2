@@ -127,7 +127,6 @@
             timeout-ms = <30>;
             key-positions = <42 43>;
             bindings = <&kp RIGHT_ALT>;
-            layers = <0>;
         };
 
         ralt2 {
@@ -294,13 +293,6 @@
         alt_right_left {
             bindings = <&kp LC(LEFT_ALT)>;
             key-positions = <54 56>;
-        };
-
-        mac_rightf18 {
-            bindings = <&kp F18>;
-            key-positions = <43 42>;
-            layers = <9>;
-            timeout-ms = <30>;
         };
 
         to_windows {
@@ -516,14 +508,14 @@
         bl1: bl1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_TOG &tog 9 &bt BT_SEL 0>;
+            bindings = <&out OUT_TOG &to 9 &bt BT_SEL 0>;
             label = "BL1";
         };
 
         bt2: bt2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 1>;
+            bindings = <&out OUT_BLE &to 0 &bt BT_SEL 1>;
             label = "BT2";
         };
 
@@ -653,7 +645,7 @@
             bindings = <
 &left_backlit         &kp NUMBER_1   &kp NUMBER_2  &x_3                &kp N4        &kp N5     &kp F1                                                                                                                                          &kp MINUS      &kp NUMBER_6  &kp SEMI  &kp Y         &kp PAGE_DOWN  &kp PG_DN              &kp EQUAL
 &kp TAB               &kp N3         &kp W         &kp E               &kp R         &mkp LCLK  &mkp RCLK                                                                                                                                       &kp F12        &kp PG_UP     &kp U     &kp I         &kp O          &kp SLASH              &kp NON_US_BACKSLASH
-&mt LEFT_COMMAND ESC  &kp A          &kp S         &kp D               &kp F         &kp G      &kp GLOBE                      &mt LS(LC(LEFT_WIN)) F4  &mt LS(LA(LCTRL)) F7         &mt LS(LA(LEFT_CONTROL)) F9  &mt LC(LS(LEFT_COMMAND)) F10  &kp F11        &kp H         &kp J     &kp K         &kp L          &pht5_semicolon 2 DOT  &tog 1
+&mt LEFT_COMMAND ESC  &kp A          &kp S         &kp D               &kp F         &kp G      &to 0                          &mt LS(LC(LEFT_WIN)) F4  &mt LS(LA(LCTRL)) F7         &mt LS(LA(LEFT_CONTROL)) F9  &mt LC(LS(LEFT_COMMAND)) F10  &kp F11        &kp H         &kp J     &kp K         &kp L          &pht5_semicolon 2 DOT  &tog 1
 &kp RIGHT_SHIFT       &pht RSHFT Z   &kp Q         &kp C               &kp T         &kp V                                                              &mt LS(LG(LEFT_ALT)) F6      &mt LG(LA(LSHFT)) F8                                                      &kp B         &nj       &kp M         &kp P          &pht2 LSHFT COMMA      &mt RIGHT_SHIFT DOT
 &td0_ls               &pht3 6 LCTRL  &kp LCTRL     &mt LEFT_WIN RCTRL  &kp LEFT_ALT             &hm LA(RIGHT_SHIFT) BACKSPACE  &mt LEFT_ALT DEL         &mt LA(LC(LEFT_WIN)) F5      &hklt LA(LC(LEFT_WIN)) 1     &pht4 6 ENTER                 &pht3 1 SPACE                &kp LEFT  &kp UP_ARROW  &kp DOWN       &kp RIGHT              &kp SEMI
             >;
