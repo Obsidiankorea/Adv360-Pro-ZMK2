@@ -276,6 +276,7 @@
         ctrl_v {
             bindings = <&kp LC(V)>;
             key-positions = <50 31>;
+            layers = <0>;
         };
 
         ddddddd {
@@ -290,11 +291,6 @@
             key-positions = <3 18>;
         };
 
-        left_numberlock {
-            bindings = <&kp KP_NUMLOCK>;
-            key-positions = <50 49>;
-        };
-
         alt_right_left {
             bindings = <&kp LC(LEFT_ALT)>;
             key-positions = <54 56>;
@@ -304,6 +300,7 @@
             bindings = <&kp F18>;
             key-positions = <43 42>;
             layers = <9>;
+            timeout-ms = <30>;
         };
     };
 
@@ -480,7 +477,7 @@
         bl1: bl1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 0>;
+            bindings = <&out OUT_TOG &tog 9 &bt BT_SEL 0>;
             label = "BL1";
         };
 
@@ -511,6 +508,13 @@
             bindings = <&out OUT_BLE &bt BT_SEL 4>;
             label = "NEW_MACRO";
         };
+
+        usb_connect: usb_connect {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_USB &to 0>;
+            label = "USB_CONNECT";
+        };
     };
 
     keymap {
@@ -518,11 +522,11 @@
 
         default_layer {
             bindings = <
-&left_backlit     &kp NUMBER_1   &kp NUMBER_2  &x_3                &kp N4        &kp N5     &kp F1                                                                                                                                          &kp MINUS      &kp NUMBER_6  &kp SEMI  &kp Y         &kp PAGE_DOWN  &kp PG_DN              &kp EQUAL
-&kp TAB           &kp N3         &kp W         &kp E               &kp R         &mkp LCLK  &mkp RCLK                                                                                                                                       &kp F12        &kp PG_UP     &kp U     &kp I         &kp O          &kp SLASH              &kp NON_US_BACKSLASH
-&mt CAPSLOCK ESC  &kp A          &kp S         &kp D               &kp F         &kp G      &kp GLOBE                      &mt LS(LC(LEFT_WIN)) F4  &mt LS(LA(LCTRL)) F7         &mt LS(LA(LEFT_CONTROL)) F9  &mt LC(LS(LEFT_COMMAND)) F10  &kp F11        &kp H         &kp J     &kp K         &kp L          &pht5_semicolon 2 DOT  &tog 1
-&kp RIGHT_SHIFT   &pht RSHFT Z   &kp Q         &kp C               &kp T         &kp V                                                              &mt LS(LG(LEFT_ALT)) F6      &mt LG(LA(LSHFT)) F8                                                      &kp B         &nj       &kp M         &kp P          &pht2 LSHFT COMMA      &mt RIGHT_SHIFT DOT
-&td0_ls           &pht3 6 LCTRL  &kp LCTRL     &mt LEFT_WIN RCTRL  &kp LEFT_ALT             &hm LA(RIGHT_SHIFT) BACKSPACE  &mt LEFT_ALT DEL         &mt LA(LC(LEFT_WIN)) F5      &hklt LA(LC(LEFT_WIN)) 1     &pht4 6 ENTER                 &pht3 1 SPACE                &kp LEFT  &kp UP_ARROW  &kp DOWN       &kp RIGHT              &kp SEMI
+&left_backlit    &kp NUMBER_1   &kp NUMBER_2  &x_3                &kp N4        &kp N5     &kp F1                                                                                                                                          &kp MINUS      &kp NUMBER_6  &kp SEMI  &kp Y         &kp PAGE_DOWN  &kp PG_DN              &kp EQUAL
+&kp TAB          &kp N3         &kp W         &kp E               &kp R         &mkp LCLK  &mkp RCLK                                                                                                                                       &kp F12        &kp PG_UP     &kp U     &kp I         &kp O          &kp SLASH              &kp NON_US_BACKSLASH
+&mt LCTRL ESC    &kp A          &kp S         &kp D               &kp F         &kp G      &kp GLOBE                      &mt LS(LC(LEFT_WIN)) F4  &mt LS(LA(LCTRL)) F7         &mt LS(LA(LEFT_CONTROL)) F9  &mt LC(LS(LEFT_COMMAND)) F10  &kp F11        &kp H         &kp J     &kp K         &kp L          &pht5_semicolon 2 DOT  &tog 1
+&kp RIGHT_SHIFT  &pht RSHFT Z   &kp Q         &kp C               &kp T         &kp V                                                              &mt LS(LG(LEFT_ALT)) F6      &mt LG(LA(LSHFT)) F8                                                      &kp B         &nj       &kp M         &kp P          &pht2 LSHFT COMMA      &mt RIGHT_SHIFT DOT
+&td0_ls          &pht3 6 LCTRL  &kp LCTRL     &mt LEFT_WIN RCTRL  &kp LEFT_ALT             &hm LA(RIGHT_SHIFT) BACKSPACE  &mt LEFT_ALT DEL         &mt LA(LC(LEFT_WIN)) F5      &hklt LA(LC(LEFT_WIN)) 1     &pht4 6 ENTER                 &pht3 1 SPACE                &kp LEFT  &kp UP_ARROW  &kp DOWN       &kp RIGHT              &kp SEMI
             >;
         };
 
@@ -551,7 +555,7 @@
 &none         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none            &none
 &none         &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none            &none
 &none         &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none            &bootloader
-&out OUT_TOG  &mo 1         &none         &none         &none         &none                             &none      &none                                           &none  &none       &none       &none  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC
+&out OUT_TOG  &out OUT_USB  &none         &none         &none         &none                             &none      &none                                           &none  &none       &none       &none  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC
 &out OUT_BLE  &bl1          &bt2          &bt3          &bt4                        &bt5         &bt5   &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &kp C_VOL_DN     &kp C_BRIGHTNESS_DEC
             >;
         };
@@ -617,5 +621,12 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        python_hwp_macro {
+            if-layers = <1 3>;
+            then-layer = <7>;
+        };
+    };
 };
