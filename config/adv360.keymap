@@ -641,11 +641,11 @@
 
         layer_8 {
             bindings = <
-&trans  &trans  &trans        &trans        &trans  &trans  &trans                                      &trans  &hwp_start  &trans     &trans        &trans         &trans  &trans
-&trans  &trans  &trans        &trans        &trans  &trans  &trans                                      &trans  &trans      &kp HOME   &kp UP_ARROW  &kp END        &trans  &trans
-&trans  &trans  &trans        &trans        &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans      &kp LEFT   &kp DOWN      &kp RIGHT      &trans  &trans
-&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &trans  &trans                  &trans      &trans                  &trans      &kp PG_UP  &kp SPACE     &kp PAGE_DOWN  &trans  &trans
-&trans  &trans  &trans        &kp N0        &trans          &trans  &trans  &trans      &trans  &trans  &trans              &trans     &trans        &trans         &trans  &trans
+&trans  &trans  &trans        &trans        &trans  &trans  &trans                                      &trans  &trans  &trans     &trans        &trans         &trans  &trans
+&trans  &trans  &trans        &trans        &trans  &trans  &trans                                      &trans  &trans  &kp HOME   &kp UP_ARROW  &kp END        &trans  &trans
+&trans  &trans  &trans        &trans        &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LEFT   &kp DOWN      &kp RIGHT      &trans  &trans
+&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &trans  &trans                  &trans      &trans                  &trans  &kp PG_UP  &kp SPACE     &kp PAGE_DOWN  &trans  &trans
+&trans  &trans  &trans        &kp N0        &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans     &trans        &trans         &trans  &trans
             >;
         };
 
