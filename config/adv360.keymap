@@ -290,49 +290,9 @@
             key-positions = <54 56>;
         };
 
-        to_windows {
-            bindings = <&to 0>;
-            key-positions = <5 20>;
-            layers = <9>;
-        };
-
-        to_Mac {
-            bindings = <&bl1>;
-            key-positions = <5 20>;
-            layers = <0>;
-        };
-
-        cmd_v {
-            bindings = <&kp LG(V)>;
-            key-positions = <50 31>;
-            layers = <9>;
-        };
-
-        cmd_c {
-            bindings = <&kp LG(C)>;
-            key-positions = <32 17>;
-            timeout-ms = <45>;
-            layers = <0>;
-        };
-
-        cmdshiftt {
-            bindings = <&kp LS(LG(T))>;
-            key-positions = <16 3 18>;
-            timeout-ms = <40>;
-            layers = <9>;
-        };
-
-        mac_cmd_z {
-            bindings = <&mt LG(LEFT_ALT) LG(Z)>;
-            key-positions = <30 32>;
-            timeout-ms = <45>;
-            layers = <9>;
-        };
-
-        rhangul {
-            bindings = <&kp RALT>;
+        r_alt {
+            bindings = <&kp LC(SPACE)>;
             key-positions = <43 42>;
-            timeout-ms = <40>;
         };
     };
 
