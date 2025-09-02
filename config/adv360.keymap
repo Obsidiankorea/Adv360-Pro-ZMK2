@@ -205,7 +205,7 @@
 
         raltctrl {
             timeout-ms = <50>;
-            key-positions = <42 43>;
+            key-positions = <43 41>;
             bindings = <&kp LG(LA(LEFT_CONTROL))>;
             layers = <0>;
         };
