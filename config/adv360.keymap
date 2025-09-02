@@ -128,7 +128,7 @@
         rf18mac {
             timeout-ms = <40>;
             key-positions = <42 43>;
-            bindings = <&kp LC(SPACE)>;
+            bindings = <&kp F18>;
             layers = <9>;
         };
 
