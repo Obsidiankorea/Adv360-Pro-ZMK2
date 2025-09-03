@@ -291,7 +291,7 @@
         };
 
         r_alt {
-            bindings = <&kp LC(SPACE)>;
+            bindings = <&kp F14>;
             key-positions = <43 42>;
         };
     };
