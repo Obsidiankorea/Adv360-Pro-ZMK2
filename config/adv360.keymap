@@ -290,8 +290,8 @@
             key-positions = <54 56>;
         };
 
-        r_alt {
-            bindings = <&kp F14>;
+        ralt2ddd {
+            bindings = <&kp RIGHT_ALT>;
             key-positions = <43 42>;
         };
     };
