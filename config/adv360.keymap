@@ -122,7 +122,7 @@
         ctrlshiftt {
             timeout-ms = <40>;
             key-positions = <16 3 18>;
-            bindings = <&kp LC(LS(T))>;
+            bindings = <&kp LS(RG(T))>;
         };
 
         ralt2 {
@@ -268,20 +268,20 @@
         };
 
         ctrl_v {
-            bindings = <&kp LC(V)>;
+            bindings = <&kp RG(V)>;
             key-positions = <50 31>;
             layers = <0>;
         };
 
         ddddddd {
-            bindings = <&kp LC(C)>;
+            bindings = <&kp RG(C)>;
             key-positions = <32 17>;
             layers = <0>;
             timeout-ms = <45>;
         };
 
         ctrl_x {
-            bindings = <&kp LC(X)>;
+            bindings = <&kp RG(X)>;
             key-positions = <3 18>;
         };
 
